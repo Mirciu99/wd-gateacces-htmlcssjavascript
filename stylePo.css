@@ -1,0 +1,301 @@
+
+*{
+  box-sizing: border-box;
+}
+/* Background Start editare */
+html {
+  background: url(img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  /* overflow: hidden; */
+  color: white;
+}
+/* Background Stop editare */
+
+/* Body Start */
+ body{
+    /* overflow: hidden; */
+    width: auto;
+    /* min-height: 65vh; */
+    /* height: 1000px; */
+    align-items: center;
+    opacity: 0.9;
+    background-size: cover;
+    margin: 0;
+}
+/* Body Stop */
+
+/* Header LOGO/ADMINISTRATOR(+POZA) */
+.head{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+#img{
+    width: 250px;
+    height: 170px;
+    margin-top: 30px;
+    margin-left: 10px;
+    /* border: 1px solid black; */
+}
+
+/* .admin1{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-end;
+} */
+
+
+.admin{
+  position: relative;
+  text-align: center;
+  width: 200px;
+  height: 150px ;
+  margin: 10px;
+  margin-left: auto;
+  right: 40px;
+  top: 10px;
+}
+/* Header LOGO/ADMINISTRATOR(+POZA) */
+
+/* Meniu start Aliniere*/
+.menu{
+  margin-top: 70px;
+  margin-left: 40px;
+  /* margin-bottom: 100px; */
+  padding: 10px;
+}
+
+.menu ul{
+  list-style: none;
+  text-align: center;
+}
+
+.meniu-divizie li{
+  width: 250px;
+  font-size: 1.3rem;
+  background: #CCCCCC;
+  padding: 10px;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+
+.meniu-angajati ul h4{
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+
+.meniu-angajati ul {
+
+  position: relative;
+  top: 0px;
+  left: -51px;
+  cursor:pointer; 
+  /* margin: 10px; */
+}
+
+.date-angajati {
+  position: absolute;
+  display: none;
+}
+
+.date-angajati ul li{
+  position: relative;
+  width: 300px;
+  right: -98px;
+  top:-10px;
+  border: none;
+  text-align: left;
+  color: #000000;
+  font-size: 1rem;
+}
+
+.container-date{
+
+  display: flex;
+}
+
+
+.pozaAngajat img{
+  width: 100px;
+  height: 100px;
+}
+
+/* .divizii{
+  display:flex;
+  align-items: flex-end;
+} */
+/* Meniu stop Aliniere*/
+
+/* Meniu DD Start */
+/* .menu ul li a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.meniu-angajati ul li:hover{
+  cursor: default;
+  background-color: #6699FF;
+  border: 1px solid white;
+  cursor:pointer; 
+} */
+
+/* .menu ul li:hover .meniu-angajati {
+  display: block;
+  position: absolute;
+  margin-left: 100px; 
+} */
+
+
+.meniu-angajati ul li:hover .date-angajati {
+  display: inline-block;
+}
+/* DD MENU STOP */
+
+/* Butoane START*/
+.butoane{
+  font-size: 20px;
+  float:right;
+  position:relative;
+  top:100px;
+}
+
+.butoane ul{
+  margin: 0; 
+  padding: 0; 
+  list-style-type: none; 
+}
+
+.butoane ul li{
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 36px;
+    text-align: center;
+    padding: 5px 18px 5px 18px;
+    /* border: 1px solid white; */
+    /* background: #CCCCCC; */
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    line-height: 1.42857143;
+}
+
+
+.butoane ul li:hover{
+  cursor: default;
+  background-color: none;
+  border: none;
+  cursor:pointer; 
+}
+
+button{
+
+  padding: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.473);
+  border-radius: 8px;
+  
+  }
+  button:hover{
+    background-color: #6699FF;
+  }
+/* Butoane Stop */
+
+
+/* Editare POZA poarta Start */
+#poartaInchisa{
+
+  width: 200px;
+  height: 200px;
+  display: none; /*am ascuns bariera inchisa */
+}
+
+#poartaDeschisa{
+
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.statusPoarta{
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Editare POZA poarta Stop */
+
+/* Editare paragraf (ora curenta/status poarta) Start */
+.paragrafuri{
+  font-size: 1.3rem;
+  padding: 15px;
+  margin-right: 15px;
+}
+/* Editare paragraf (ora curenta/status poarta) Stop */
+
+/* Editare casuta request Start */
+.request{
+  font-size: 1.3rem;
+  border: 1px solid black;
+  height: 170px;
+  width: 500px;
+  /* padding: 10px 10px 10px 10px; */
+  margin: 20px 50%;
+  transform: translateX(-50%);
+  text-align: center;
+background: #cccccc83; 
+color: black;
+}
+#btnValidare{
+
+    margin: 0px 20px 0px 0px;
+}
+#btnInvalidare{
+  margin: 0px 0px 0px 20px;
+}
+.validareRequest{
+  display: flex;  
+  justify-content: center;
+}
+/* Editare casuta request Stop */
+
+/* Asezare box validare/invalidare Start */
+#validare, #invalidare{
+width: 300px;
+height: 150px;
+border: 1px solid black;
+margin-top: 60px;
+background: #cccccc83; 
+color: black;
+padding: 3px;
+
+}
+#invalidare{
+  
+  position: relative;
+  margin-left: 80px;
+ text-align: center;
+
+}
+#validare{
+  
+  position: relative;
+  margin-right: 70px;
+  text-align: center;
+}
+#btnDeschidePoarta{
+  margin-right: 5px;
+}
+/* Asezare box validare/invalidare Stop */
+.footer{
+  height: 20px;
+  
+}

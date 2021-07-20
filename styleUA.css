@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: url(img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    /* overflow: hidden; */
+    color: white;
+}
+
+body {
+    /* overflow: hidden; */
+    width: auto;
+    /* min-height: 65vh; */
+    /* height: 1000px; */
+    align-items: center;
+    opacity: 0.9;
+    background-size: cover;
+    margin: 0;
+}
+
+.head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#img {
+    width: 250px;
+    height: 170px;
+    margin-top: 30px;
+    margin-left: 10px;
+    /* border: 1px solid black; */
+}
+
+.admin1 {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: flex-end;
+}
+
+.admin {
+    position: relative;
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    margin-left: auto;
+    right: 40px;
+    top: 10px;
+}
+
+.menu {
+    margin-top: 80px;
+    margin-left: 40px;
+    /* margin-bottom: 100px; */
+    padding: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.meniu-divizie li {
+    width: 250px;
+    font-size: 1.3rem;
+    background: #ccccccb0;
+    padding: 10px;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+.meniu-angajati ul h4 {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.meniu-angajati ul {
+    position: relative;
+    top: 0px;
+    left: -51px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    cursor: pointer;
+    /* margin: 10px; */
+}
+
+.date-angajati {
+    position: absolute;
+    display: none;
+}
+
+.date-angajati ul li {
+    position: relative;
+    width: 300px;
+    right: -96px;
+    top: -20px;
+    border: none;
+    background: #ccccccb0;
+    text-align: left;
+    color: #000000;
+    font-size: 1.4rem;
+}
+
+.container-date {
+    display: flex;
+}
+
+.pozaAngajat img {
+    width: 100px;
+    height: 100px;
+}
+
+.divizii {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/* Meniu DD Start */
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.meniu-angajati ul li:hover {
+    cursor: default;
+    background-color: #6699FF;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.meniu-angajati ul li:hover .date-angajati {
+    display: inline-block;
+}
+
+
+/* DD MENU STOP */
+
+
+/* Butoane START*/
+
+.butoane {
+    font-size: 20px;
+    float: right;
+    position: relative;
+    top: 100px;
+}
+
+.butoane ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.butoane ul li {
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 36px;
+    text-align: center;
+    padding: 5px 18px 5px 18px;
+    /* border: 1px solid white; */
+    /* background: #CCCCCC; */
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    line-height: 1.42857143;
+}
+
+.butoane ul li:hover {
+    cursor: default;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    padding: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.473);
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #6699FF;
+}
+
+
+/* Butoane Stop */

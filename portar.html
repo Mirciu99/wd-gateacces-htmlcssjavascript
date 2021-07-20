@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portar PAGE</title>
+    <link rel="stylesheet" href="stylePo.css">
+</head>
+<body>
+
+  <section class="head">
+    <!-- Logo Start -->
+    <div class="logo">
+          <img src="img/logo1.png" id="img" alt="logo">
+    </div>
+    <!-- Logo Stop -->
+
+    <!-- Portar Poza si Nume dreapta interfetei Start -->
+    <div class="admin">
+          <h3>Portar</h3>
+          <img src="img/administrator.png" alt="adimistrator" width="65%" height="90%">
+    </div>
+    <!-- Portar Poza si Nume dreapta interfetei Start -->
+  </section>
+
+     
+  <div class="container">
+    <!-- Status poarta (deschis/inchis) Start -->
+    <div class="statusPoarta">
+          <div class="paragrafuri">
+          <p >Ora curenta: <span id="ora">10:10</span></p>
+          <p>Stare poarta: <span id="starePoarta">In curs de deschidere</span></p>
+          </div>
+          <div class="statusBariera">
+            <p>Stare bariera</p>
+            <img src="img/PoartaInchisa.jpg" alt="" id="poartaInchisa">
+            <img src="img/StatusDeschis.jpeg" alt="" id="poartaDeschisa">
+          </div>
+    </div>
+    <!-- Status poarta (deschis/inchis) Stop-->
+
+    <!-- Request accesare poarta Start -->
+    <div class="request">
+          <h3>Request</h3>
+          <p>Angajatul <span id="nrAngajat">1</span> doreste sa acceseze poarta.</p>
+          <div class="butoaneRequest">
+            <button id="btnValidare">Validare</button>
+            <button id="btnInvalidare">Invalidare</button>
+          </div>
+
+    </div>
+    <!-- Request accesare poarta Stop -->
+
+    <!-- Validare sau Invalidare Request Start -->
+    <div class="validareRequest">
+        <div id="validare">
+            <h3>Validare</h3>
+            <button id="btnDeschidePoarta">Deschide poarta</button>
+            <button id="btnRidicareBariera">Ridicare bariera</button>
+        </div>
+        <div id="invalidare">
+            <h3>Invalidare</h3>
+            <p>Acces interzis!</p>
+            <button id="btnOk">Ok</button>
+        </div>
+    </div>
+    <!-- Validare sau Invalidare Request Stop -->
+
+  </div>
+       
+  <div class="footer"></div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

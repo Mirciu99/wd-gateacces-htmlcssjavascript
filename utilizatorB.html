@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTILIZATOR AUTORIZAT PAGE</title>
+    <link rel="stylesheet" href="styleUA.css">
+</head>
+<body>
+    <section class="head">
+        <!-- Logo Start -->
+        <div class="logo">
+          <img src="img/logo1.png" id="img" alt="logo">
+        </div>
+        <!-- Logo Stop -->
+
+        <!-- Utilizator AU Poza si Nume dreapta interfetei Start -->
+        <div class="admin">
+          <h3>Utilizator Autorizat</h3>
+          <img src="img/administrator.png" alt="adimistrator" width="65%" height="90%">
+        </div>
+        <!-- Utilizator AU Poza si Nume dreapta interfetei Stop -->
+       </section>
+     
+       
+  <div class="menu"> 
+    <div class="divizi"> 
+      <!-- Butoane Start -->
+      <div class="butoane">
+        <ul> 
+        <li> <button id="btnRaportPrezentaDivizie">Raport prezenta divizie</button> </li> 
+        </ul> 
+      </div>     
+      <!-- Butoane Stop -->
+      <!-- Divizii  start -->
+      <h3>Divizii</h3>
+      <ul class="meniu-divizie">
+        <li class="divizie"><a href="#">Divizia <span id="literaDivizie">B</span></a> 
+          <div class="meniu-angajati"> 
+            <ul  id="ul-divizie-B" class="ul-divizie">
+             
+
+
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <!-- Divizii Stop -->
+    </div>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-storage.js"></script>
+ 
+ <script>
+  var firebaseConfig = {
+     apiKey: "AIzaSyAuSBICPizStLMpV4nrTvA__-5gib8kIL0",
+     authDomain: "acces-ee9dd.firebaseapp.com",
+     databaseURL: "https://acces-ee9dd-default-rtdb.europe-west1.firebasedatabase.app",
+     projectId: "acces-ee9dd",
+     storageBucket: "acces-ee9dd.appspot.com",
+     messagingSenderId: "108105881378",
+     appId: "1:108105881378:web:4fa9d422fa114c2c3d377b",
+     measurementId: "G-WJQM70JLFM"
+ 
+   };
+   // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+ </script>
+
+
+
+    <script src="app2.js"></script>
+</body>
+</html>

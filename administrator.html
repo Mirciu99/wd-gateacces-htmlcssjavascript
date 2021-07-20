@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMINISTRATOR PAGE</title>
+    <link rel="stylesheet" href="administrator.css">
+</head>
+
+<body>
+    <section class="head">
+      <!-- Logo Start -->
+      <div class="logo">
+        <img src="img/logo1.png" id="img" alt="logo">
+      </div>
+      <!-- Logo Stop -->
+
+      <!-- Administrator Poza si Nume dreapta interfetei Start -->
+      <div class="admin">
+        <h3>Administrator</h3>
+        <img src="img/administrator.png" alt="adimistrator" width="65%" height="90%">
+      </div>
+      <!-- Administrator Poza si Nume dreapta interfetei Stop -->
+     </section>
+   
+     <!-- Form de adaugare -->
+     <form id="adaugareAngajat" class="AddEdit">
+      <label for="" >Adauga imagine</label>
+       <!-- <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)"> -->
+       <p><img id="output" width="100" /></p>
+       <input type="file" id="file">
+      <div class="dateAngajat">
+      <label for="">PUK</label>
+      <input type="number" id="pukForm">
+       <label for="">Nume</label>
+      <input type="text" id="numeForm">
+      <label for="">Prenume</label>
+      <input type="text" id="prenumeForm">
+      <label for="">CNP</label>
+      <input type="number" id="cnpForm">
+      <label for="">Numar legitimatie</label>
+      <input type="text" id="nrlegitimatieForm">
+      <label for="">Numar masina</label>
+      <input type="text" id="nrmasinaForm">
+      <label for="">Divizia</label>
+      <input type="text" id="diviziaForm">
+      <label for="">Acces</label>
+      <select name="acces" id="accesForm" class="accesForm">
+        <option value="on">On</option>
+        <option value="off">Off</option>
+      </select>
+      <div class="oreAcces">
+      <label for="">Interval ore acces</label>
+      <input type="text" id="ora1Form"> - <input type="text" id="ora2Form">
+    </div>
+      <label for="">Grad</label>
+      <select name="grad" id="gradForm" class="gradForm">
+        <option value="0">Angajat</option>
+        <option value="1">Administrator</option>
+        <option value="2">Utilizator autorizat</option>
+        <option value="3">Portar</option>
+      </select>
+      <label for="">Data de inregistrare</label>
+      <input type="text" id="dataForm">
+      <label for="">Marca admin</label>
+      <input type="text" id="marcaAdminForm">
+    
+    </div>
+    <button id="btnAdaugareAngajat">Adauga</button>
+
+     </form>
+
+     <form id="editareAngajat" class="AddEdit">
+      <!-- <label for="" >Adauga imagine</label> -->
+       <!-- <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)"> -->
+       <!-- <p><img id="outputM" width="100" /></p> -->
+       <!-- <input type="file" id="fileM"> -->
+      <div class="dateAngajat">
+      <label for="">PUK</label>
+      <input type="number" id="pukFormM">
+       <label for="">Nume</label>
+      <input type="text" id="numeFormM">
+      <label for="">Prenume</label>
+      <input type="text" id="prenumeFormM">
+      <label for="">CNP</label>
+      <input type="number" id="cnpFormM">
+      <label for="">Numar legitimatie</label>
+      <input type="text" id="nrlegitimatieFormM">
+      <label for="">Numar masina</label>
+      <input type="text" id="nrmasinaFormM">
+      <label for="">Divizia</label>
+      <input type="text" id="diviziaFormM">
+      <label for="">Acces</label>
+      <select name="acces" id="accesFormM" class="accesForm">
+        <option value="on">On</option>
+        <option value="off">Off</option>
+      </select>
+      <div class="oreAcces">
+      <label for="">Interval ore acces</label>
+      <input type="text" id="ora1FormM"> - <input type="text" id="ora2FormM">
+    </div>
+      <label for="">Grad</label>
+      <select name="grad" id="gradFormM"  class="gradForm" >
+        <option value="0">Angajat</option>
+        <option value="1">Administrator</option>
+        <option value="2">Utilizator autorizat</option>
+        <option value="3">Portar</option>
+      </select>
+      <label for="">Data de inregistrare</label>
+      <input type="text" id="dataFormM">
+      <label for="">Marca admin</label>
+      <input type="text" id="marcaAdminFormM">
+    
+    </div>
+    <button id="modificaAngajat">Modifica</button>
+
+     </form>
+
+     <div class="cautarePuk">
+       <label for="">Adauga puk-ul:</label><br>
+       <input type="number" id="pukCautat">
+       <button id="btncautarePuk">Cautare</button>
+     </div>
+
+     
+<div class="menu"> 
+  <div class="divizi"> 
+    <!-- Butoane Start -->
+    <div class="butoane">
+      <ul> 
+        <li> <button id="btnAdugare">Adaugare angajat</button></li> 
+        <li> <button id="btnStergere">Stergere angajat</button> </li> 
+        <li> <button id="btnEditare">Editare informatii</button> </li> 
+        <li> <button id="btnRapoartPrezentaCompanie">Raport  prezenta companie</button></li> 
+      </ul> 
+     </div>
+     <!-- Butoane Stop -->
+    <h3 >Divizii</h3>
+    <ul id="meniu-divizie">
+      <!-- Divizia A start -->
+      <li class="divizie"><a href="#">Divizia A</a> 
+        <div class="meniu-angajati"> 
+          <ul id="ul-divizie-A" class="ul-divizie">
+            <!-- Lista cu Angajati Start -->
+            <h4>Lista angajati divizie</h4>
+            
+          
+          </ul>
+        </div>
+      </li>
+      <!-- Divizia A stop -->
+
+      <!-- Divizia B start -->
+         <li class="divizie"><a href="#">Divizia B</a> 
+        <div class="meniu-angajati"> 
+          <ul id="ul-divizie-B" class="ul-divizie">
+            <!-- Lista cu Angajati Start -->
+            <h4>Lista angajati divizie</h4>
+            
+            
+          </ul>
+        </div>
+      </li>
+
+      <!-- Divizia C -->
+      <li class="divizie"><a href="#">Divizia C</a> 
+        <div class="meniu-angajati" > 
+          <ul id="ul-divizie-C" class="ul-divizie">
+            <!-- Lista cu Angajati Start -->
+            <h4>Lista angajati divizie</h4>
+            
+            
+          </ul>
+        </div>
+      </li>
+
+      <!-- Divizia D -->
+      <li class="divizie"><a href="#">Divizia D</a> 
+        <div class="meniu-angajati"> 
+          <ul id="ul-divizie-D" class="ul-divizie">
+            <!-- Lista cu Angajati Start -->
+            <h4>Lista angajati divizie</h4>
+            
+          </ul>
+        </div>
+      </li>
+      
+      <!-- Divizia E -->
+      <li class="divizie"><a href="#">Divizia E</a> 
+        <div class="meniu-angajati"> 
+          <ul id="ul-divizie-E" class="ul-divizie">
+            <!-- Lista cu Angajati Start -->
+            <h4>Lista angajati divizie</h4>
+            
+            
+          </ul>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+<!-- Configurez Data de baze -->
+
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-storage.js"></script>
+
+<script>
+ var firebaseConfig = {
+    apiKey: "AIzaSyAuSBICPizStLMpV4nrTvA__-5gib8kIL0",
+    authDomain: "acces-ee9dd.firebaseapp.com",
+    databaseURL: "https://acces-ee9dd-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "acces-ee9dd",
+    storageBucket: "acces-ee9dd.appspot.com",
+    messagingSenderId: "108105881378",
+    appId: "1:108105881378:web:4fa9d422fa114c2c3d377b",
+    measurementId: "G-WJQM70JLFM"
+
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
